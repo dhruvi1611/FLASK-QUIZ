@@ -7,3 +7,6 @@ QUIZ APPLICATION USING FLASK HTML AND CSS
 
 pip3 install flask
 
+add apk.py by creating file
+
+

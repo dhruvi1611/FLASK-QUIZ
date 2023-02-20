@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Guess The Logo</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="{{ url_for('static',filename='css/guess.css')}}" rel="stylesheet">
+   </head>
+<body>
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+         <div class="container-fluid">
+             <!--    <a class="navbar-brand" href="#">Navbar</a>-->
+       
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="navbar-brand" href="#">
+                     <img src="/static/css/mind.png" width="30" height="24">
+                 
+                 </a>
+               </li>
+               <li class="nav-item " >
+                 <a class="nav-link active" href="dash" >Quite</a>
+               </li>
+                 <ul class="navbar-nav position-absolute end-0 mx-3">
+       
+                       <!-- <li class="nav-item p-1">
+                         <a  class=" btn btn-outline-info " href="login">LOGIN</a>
+                       </li>
+                       <li class="nav-item p-1"> -->
+                         <!-- <a class="btn btn-outline-info" href="/logout" >Logout🔙</a> -->
+                       </li>
+                      
+                     </ul>
+             </ul>
+           </div>
+         </div>
+       </nav>
+      <div class="all-items-center" id="sco">
+         
+         
+            <div style="margin-top: 20px;">
+               <h1 class="header-title">Guess The Logo</h1>
+               <hr style="border: 3px solid #ff9100; border-radius: 10px; width: 100px; margin-bottom: 20px;" />
+               <div class="alert-box"></div>
+               <div class="hinl-place"></div>
+               <p class="qustion"></p>
+               <input type="text" class="answer" placeholder="Type Your Answer" />
+               <br/>
+               <button class="skip"> skip </button>
+               <button class="reveal"> reveal </button>
+               <br>
+               <input type="button" class="submit-btn" value="submit"/>
+            </div>
+         
+      </div>
+      <script type="text/javascript" src="{{ url_for('static',filename='script/gues.js')}}">
+
+      </script>
+      <script type="text/javascript" src="{{ url_for('static',filename='script/gue.js')}}">
+  
+      </script>
+   </body>
+</html>
